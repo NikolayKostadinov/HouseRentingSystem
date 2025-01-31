@@ -1,0 +1,11 @@
+﻿@using HouseRentingSystem.Web.Infrastructure
+@{
+    if(this.User.IsAdmin())
+    {
+        Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
