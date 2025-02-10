@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Restor NuGet packages') {
 			steps {
-				bat 'dotnet restorte'
+				bat 'dotnet restore'
 			}
 		}
 
